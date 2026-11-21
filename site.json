@@ -1,0 +1,126 @@
+{
+  "suite": {
+    "id": "showtime-suite",
+    "name": "Showtime Suite",
+    "color": "#a78bfa",
+    "releases": "Cheter0410/showtime-suite-releases",
+    "tagline": "Free tools for live shows: playback, presentations, projection, planning and network monitoring. One launcher installs, updates and starts them.",
+    "macos": { "suffix": ".dmg" },
+    "windows": { "prefix": "Showtime-Suite-Setup-", "suffix": ".exe" },
+    "linux": { "suffix": "-linux-x86_64.tar.gz" },
+    "features": [
+      "One card per app: installed version, newest release, Install, Update, Open and what is new.",
+      "Downloads come from each app's GitHub releases and are checked against their SHA-256.",
+      "A running app is never replaced: a show may be going on.",
+      "All apps go into one folder: Programs › Showtime Suite on the Mac, your own user folder on Windows and Linux, no admin rights needed."
+    ]
+  },
+  "apps": [
+    {
+      "id": "showmaster",
+      "name": "Show Master",
+      "color": "#22c55e",
+      "releases": "Cheter0410/show-master-releases",
+      "tagline": "Cue-based show control: audio playback, MIDI, OSC, timecode and tablet remote.",
+      "intro": "The cue list for theatre, events, installations and concerts. GO fires the next cue: audio with fades, MIDI, OSC, HTTP and timecode, all from one list. Runs completely offline.",
+      "macos": { "suffix": ".dmg" },
+      "windows": { "prefix": "ShowMaster-Setup-", "suffix": ".exe" },
+      "linux": { "suffix": "-linux-x86_64.tar.gz" },
+      "features": [
+        ["Cue list with playhead", "GO fires the cue at the playhead and moves on. Groups, wait times, follow-ons and loops."],
+        ["Every kind of cue", "Audio, fades, MIDI (with SysEx and MSC), OSC to desks and other tools, HTTP, timecode and control cues."],
+        ["Timecode", "LTC as audio, MTC and RTP-MIDI at the same time; cues can fire at timecode times."],
+        ["Tablet remote", "Open showmaster.local on a phone or iPad: a view, a remote with GO and Panic, and a stage display. Pair with a QR code."],
+        ["Edit and Live", "Build the show in Edit mode with waveform and routing matrix; Live mode is read-only with big buttons."],
+        ["Backup computer", "A second computer with the same show follows along and takes over."],
+        ["Show packages", "Show and all audio files in one file; cue sheets as PDF or CSV."]
+      ]
+    },
+    {
+      "id": "lantern",
+      "name": "Lantern",
+      "color": "#ffc45c",
+      "releases": "Cheter0410/lantern-releases",
+      "tagline": "Presentation playback for live shows: PowerPoint, GO or timecode, display and NDI.",
+      "intro": "Plays PowerPoint files on a display and over NDI, slide by slide with GO or on timecode. It is a playback tool, not an editor: make the presentation in PowerPoint, Keynote or LibreOffice.",
+      "macos": { "suffix": ".dmg" },
+      "windows": { "prefix": "Lantern-Setup-", "suffix": ".exe" },
+      "linux": { "suffix": "-linux-x86_64.tar.gz" },
+      "features": [
+        ["PowerPoint as it looks", "Every slide rendered in the output resolution. Also .ppt, .odp, .key and plain PDFs."],
+        ["Live layout", "Slide list with thumbnails, LIVE and NEXT, big GO and GO back, blackout, notes and clocks."],
+        ["Builds", "Shapes and bullet points that come with a click in PowerPoint come with GO, step by step."],
+        ["GO or timecode", "Trigger with a button, a clicker, OSC or Show Master, or at timecode keyframes (LTC, MTC, RTP-MIDI)."],
+        ["Outputs", "Full screen on any display, on several at once, and as an NDI source. A test picture for setting up."],
+        ["Stage display", "Time, countdown, messages, the slide now and next and the notes, on a display, over NDI or in a browser."],
+        ["Web remote and show log", "A remote page for a phone; every cue logged with time of day and timecode."]
+      ]
+    },
+    {
+      "id": "beamweave",
+      "name": "Beamweave",
+      "color": "#e94f8a",
+      "releases": "Cheter0410/beamweave-releases",
+      "tagline": "Projection mapping, LED pixel mapping and NDI.",
+      "intro": "Map video onto any surface, line up several projectors in one 3D room, and drive LED strips from the same picture.",
+      "macos": { "suffix": ".dmg" },
+      "windows": { "prefix": "Beamweave-Setup-", "suffix": ".exe" },
+      "linux": null,
+      "features": [
+        ["Surfaces", "Quads with correct perspective, triangles, ellipses, grid warps up to 12×12 and polygon masks."],
+        ["Sources", "Video files with sound, cameras and capture cards, images, NDI inputs, live-editable shaders and colours."],
+        ["Several projectors", "Each with its own resolution, corner correction and soft edges for overlaps."],
+        ["3D room", "Projectors and surfaces share one room, so several projectors line up on the same place."],
+        ["LED pixel mapping", "Strips and matrices sample the picture and go out as Art-Net or sACN."],
+        ["NDI out", "Any stage can be published as an NDI source on the network."],
+        ["Control", "MIDI learn, OSC, keyboard and scenes with fades; undo, autosave and a manual."]
+      ]
+    },
+    {
+      "id": "blueprint",
+      "name": "Blueprint",
+      "color": "#3898ec",
+      "releases": "jay212-1/blueprint-releases",
+      "tagline": "Planning: mic plots, setlists, patch plans and more.",
+      "intro": "Plans for live shows, from one project file: mic plots for theatre and musicals, setlists, patch plans across several locations and more, everything printable as a clean PDF.",
+      "macos": { "suffix": ".dmg" },
+      "windows": { "prefix": "Blueprint-Setup-", "suffix": ".exe" },
+      "linux": { "suffix": "-linux-x86_64.tar.gz" },
+      "features": [
+        ["One project per production", "Cast, roles with their casting, scenes, transmitters and locations. Change a name in one place."],
+        ["Tables like a spreadsheet", "Keyboard first, several rows at once, drag to reorder, copy and paste with Excel or Numbers."],
+        ["Mic plan", "Scene × transmitter matrix, swaps, casts of the day, spares in one click, DCAs, batteries, frequencies and checks for every clash."],
+        ["Setlists", "A song library, breaks and encores, times of day, printed on one page as large as fits."],
+        ["Patch", "Devices, multicores and network lines, input and output patch with the whole signal path, cables and stands counted."],
+        ["More plans", "Stage plot from a symbol library, run of show, contacts, packing list, intercom plan and free tables."],
+        ["Prints and exchange", "PDFs with embedded fonts, revisions with change marks, CSV and spreadsheet import, an exchange file for Pulse and the other tools."]
+      ]
+    },
+    {
+      "id": "pulse",
+      "name": "Pulse",
+      "color": "#2dd4bf",
+      "releases": "jay212-1/pulse-releases",
+      "tagline": "Network and device monitor: one traffic light for the show's technology.",
+      "intro": "Checks before and during the show that the desk, stageboxes, NDI sources, Art-Net and sACN universes, tablets, show computers and the network are there and healthy, and turns all of it into one traffic light with the reasons.",
+      "macos": { "suffix": ".dmg" },
+      "windows": { "prefix": "Pulse-Setup-", "suffix": ".exe" },
+      "linux": { "suffix": "-linux-x86_64.tar.gz" },
+      "extra": [
+        { "label": "Pulse Agent for Mac", "match": "pulse-agent-", "suffix": "-macos.zip" },
+        { "label": "Pulse Agent for Windows", "match": "pulse-agent-", "suffix": "-windows-x86_64.zip" },
+        { "label": "Pulse Agent for Linux", "match": "pulse-agent-", "suffix": "-x86_64-linux.tar.gz" }
+      ],
+      "extra_note": "Pulse Agent is a small read-only helper for show computers: CPU, memory, free disk and whether the show programs run.",
+      "features": [
+        ["One light", "Green, yellow or red, with the reason in plain words, per area and overall. Calm, with hysteresis and acknowledgements."],
+        ["Checks that only ask", "Ping without admin rights, TCP ports, console queries, Art-Net and sACN universes, Dante and NDI, switch ports over SNMP."],
+        ["19 presets", "X32 / M32, X Air, Wing, Soundcraft Si, grandMA3, Dante, NDI, Art-Net, sACN, switches, show computers and more."],
+        ["CHECK, SHOW, DIAGNOSE", "Set up and check; a quiet view for the show with a separate light window; graphs, hints, port test and traceroute for one device."],
+        ["Pre-show check", "Every check once, sign-off with your name, a report as HTML and CSV."],
+        ["Status page", "A read-only view for phones of the crew in the same network."],
+        ["From Blueprint", "Take over the devices of a Blueprint project, with presets from their model."]
+      ]
+    }
+  ]
+}
